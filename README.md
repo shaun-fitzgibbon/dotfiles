@@ -60,11 +60,18 @@ curl -sfL https://git.io/chezmoi | sh
 chezmoi upgrade
 ```
 
+### 9. Install tmux
+
+```sh
+brew install tmux
+```
+
 ## Programs I use
 
 - chrome
 - vscode
 - nvim
+- tmux
 - dashlane
 - figma
 - whatsapp
