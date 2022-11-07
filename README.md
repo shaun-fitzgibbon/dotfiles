@@ -82,3 +82,5 @@ brew install tmux
 - alfred
 - deluge
 - vbcables
+- nvm
+- node
