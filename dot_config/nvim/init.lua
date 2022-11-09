@@ -5,7 +5,7 @@ require("personal.plugins-setup") -- Plugins
 require("personal.core.options") -- Options
 require("personal.core.keymaps") -- Key Mappings
 require("personal.core.colorscheme") -- Key Mappings
--- require("personal.core.autocmd") -- Autocommands / Autogroups
+require("personal.core.autocmd") -- Autocommands / Autogroups
 
 -- PLUGINS
 require("personal.plugins.comment")
