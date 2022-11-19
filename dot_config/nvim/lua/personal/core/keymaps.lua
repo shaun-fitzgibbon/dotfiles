@@ -7,7 +7,7 @@ vim.g.localleader = " "
 local keymap = vim.keymap -- for conciseness
 
 ----------------------
--- Modes 
+-- Modes
 --  normal_mode = "n"
 --  insert_mode = "i"
 --  visual_mode = "v"
@@ -22,6 +22,9 @@ local keymap = vim.keymap -- for conciseness
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
+
+-- Reload config
+keymap.set("n", "<leader>s", ":luafile $MYVIMRC<CR>")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")

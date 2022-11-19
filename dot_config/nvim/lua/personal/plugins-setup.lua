@@ -17,18 +17,17 @@ if not status then
 	return
 end
 
--- return packer.init({
---   enable = true, -- enable profiling via :PackerCompile profile=true
---   threshold = 0, -- the amount in ms that a plugins load time must be over for it to be included in the profile
---   max_jobs = 20, -- Limit the number of simultaneous jobs. nil means no limit. Set to 20 in order to prevent PackerSync form being "stuck" -> https://github.com/wbthomason/packer.nvim/issues/746
---   -- Have packer use a popup window
---   display = {
---     open_fn = function()
---       return require("packer.util").float({ border = "rounded" })
---     end,
---   },
--- }
--- end)
+packer.init({
+	enable = true, -- enable profiling via :PackerCompile profile=true
+	threshold = 0, -- the amount in ms that a plugins load time must be over for it to be included in the profile
+	max_jobs = 20, -- Limit the number of simultaneous jobs. nil means no limit. Set to 20 in order to prevent PackerSync form being "stuck" -> https://github.com/wbthomason/packer.nvim/issues/746
+	-- Have packer use a popup window
+	display = {
+		open_fn = function()
+			return require("packer.util").float({ border = "rounded" })
+		end,
+	},
+})
 
 return packer.startup(function(use)
 	-- packer can manage itself
@@ -36,7 +35,8 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("Mofiqul/dracula.nvim") --preferred colorscheme
+	use("Mofiqul/dracula.nvim")
+	use({ "catppuccin/nvim", as = "catppuccin" }) --preferred colorscheme
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -53,7 +53,7 @@ return packer.startup(function(use)
 	use("nvim-tree/nvim-tree.lua")
 
 	-- vs-code like icons
-	use("kyazdani42/nvim-web-devicons")
+	use("nvim-tree/nvim-web-devicons")
 
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
@@ -94,10 +94,17 @@ return packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
+	use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+	-- which key
+	use("folke/which-key.nvim")
 
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+	use({ "p00f/nvim-ts-rainbow", after = "nvim-treesitter" }) -- rainbow tags
+
+	use("lukas-reineke/indent-blankline.nvim")
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
