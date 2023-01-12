@@ -113,12 +113,15 @@ return packer.startup(function(use)
 	-- auto closing
 	use "windwp/nvim-autopairs" -- autoclose parens, brackets, quotes, etc...
 	use { "windwp/nvim-ts-autotag", after = "nvim-treesitter" } -- autoclose tags
-	use "p00f/nvim-ts-rainbow" -- rainbow tags
+	use { "p00f/nvim-ts-rainbow", after = "nvim-treesitter" } -- rainbow tags
 
 	use { "lukas-reineke/indent-blankline.nvim" }
 
 	-- git integration
 	use { "lewis6991/gitsigns.nvim" } -- show line modifications on left hand side
+
+	-- Todo Comments
+	use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" }
 
 	-- The Primeagen : Vim Game
 	use { "ThePrimeagen/vim-be-good" } -- Vim be good game

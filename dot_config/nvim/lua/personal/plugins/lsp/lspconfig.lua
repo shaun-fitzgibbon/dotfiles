@@ -71,6 +71,12 @@ typescript.setup({
 	},
 })
 
+-- configure Astro server
+lspconfig.astro.setup {
+	on_attach = on_attach,
+	capabilities = capabilities
+}
+
 -- configure css server
 lspconfig["cssls"].setup({
 	capabilities = capabilities,

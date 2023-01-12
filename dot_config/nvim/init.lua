@@ -1,5 +1,3 @@
---[[ init.lua ]]
-
 -- CORE
 require("personal.plugins-setup") -- Plugins
 require("personal.core.options") -- Options
@@ -23,3 +21,5 @@ require("personal.plugins.treesitter")
 require("personal.plugins.gitsigns")
 require("personal.plugins.whichkey")
 require("personal.plugins.bufferline")
+require("personal.plugins.trouble")
+require("personal.plugins.todo-comments")
