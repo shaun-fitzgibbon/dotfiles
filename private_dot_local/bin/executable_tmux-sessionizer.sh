@@ -4,7 +4,7 @@ if [[ $# -eq 1 ]]; then
     echo $1
     selected=$1
 else
-    selected=$(find ~/projects/personal ~/projects/fitzindustries ~/projects/aws ~/projects/aws ~/projects/templates ~/projects/spike ~/projects/spike/v9 -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/projects/personal ~/projects/fitzindustries ~/projects/aws ~/projects/templates ~/projects/spike ~/projects/spike/v9 -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
@@ -21,9 +21,9 @@ case $selected in
   *"/projects/spike"*)
     selected_name=[spike]_$(basename "spike__$selected" | tr . _) ;;
   *"/projects/aws"*)
-    selected_name=[spike]_$(basename "aws__$selected" | tr . _) ;;
+    selected_name=[aws]_$(basename "aws__$selected" | tr . _) ;;
   *"/projects/templates"*)
-    selected_name=[spike]_$(basename "templates__$selected" | tr . _) ;;
+    selected_name=[templates]_$(basename "templates__$selected" | tr . _) ;;
   *)
     selected_name=[other]_$(basename "other__$selected" | tr . _) ;;
 esac
