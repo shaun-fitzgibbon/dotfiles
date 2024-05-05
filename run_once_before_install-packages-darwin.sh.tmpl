@@ -5,10 +5,14 @@ brew bundle --no-lock --file=/dev/stdin <<EOF
 tap "caarlos0/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+
+### BREWS ###
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Console Matrix
 brew "cmatrix"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Fast and simple Node.js version manager
 brew "fnm"
 # Command-line fuzzy finder written in Go
@@ -34,9 +38,13 @@ brew "tmux"
 # Timer is like sleep, but reports progress.
 brew "caarlos0/tap/timer"
 # View, print, and comment on PDF documents
+
+### CASKS ###
 cask "adobe-acrobat-reader"
 # BitTorrent client
 cask "deluge"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Collaborative team software
 cask "figma"
 # Developer targeted fonts with a high number of glyphs
@@ -63,6 +71,13 @@ cask "visual-studio-code"
 cask "vlc"
 # Rust-based terminal
 cask "warp"
+
+### Mas - Mac App Store command-line interface ###
+mas "Hotspot Shield", id: 771076721
+mas "LanScan", id: 472226235
+mas "The Unarchiver", id: 425424353
+
+### VsCode Plugins ###
 vscode "antfu.goto-alias"
 vscode "anweber.vscode-httpyac"
 vscode "arcanis.vscode-zipfs"
