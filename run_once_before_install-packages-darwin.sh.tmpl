@@ -2,7 +2,118 @@
 #!/bin/bash
 
 brew bundle --no-lock --file=/dev/stdin <<EOF
+tap "caarlos0/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Console Matrix
+brew "cmatrix"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Distributed revision control system
 brew "git"
-# cask "google-chrome"
+# Mac App Store command-line interface
+brew "mas"
+# Text-based UI library
+brew "ncurses"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Theme for zsh
+brew "powerlevel10k"
+# Reattach process (e.g., tmux) to background
+brew "reattach-to-user-namespace"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Send macOS User Notifications from the command-line
+brew "terminal-notifier"
+# Terminal multiplexer
+brew "tmux"
+# Timer is like sleep, but reports progress.
+brew "caarlos0/tap/timer"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
+# BitTorrent client
+cask "deluge"
+# Collaborative team software
+cask "figma"
+# Developer targeted fonts with a high number of glyphs
+cask "font-blex-mono-nerd-font"
+# Desktop client for GitHub repositories
+cask "github"
+# GPU-based terminal emulator
+cask "kitty"
+# Remote desktop client
+cask "microsoft-remote-desktop"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Team communication and collaboration software
+cask "slack"
+# Video game digital distribution service
+cask "steam"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+# Rust-based terminal
+cask "warp"
+vscode "antfu.goto-alias"
+vscode "anweber.vscode-httpyac"
+vscode "arcanis.vscode-zipfs"
+vscode "aykutsarac.jsoncrack-vscode"
+vscode "bierner.emojisense"
+vscode "bierner.lit-html"
+vscode "bradlc.vscode-tailwindcss"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "davidanson.vscode-markdownlint"
+vscode "dbaeumer.vscode-eslint"
+vscode "donjayamanne.typescript-notebook"
+vscode "dsznajder.es7-react-js-snippets"
+vscode "editorconfig.editorconfig"
+vscode "esbenp.prettier-vscode"
+vscode "formulahendry.auto-close-tag"
+vscode "formulahendry.auto-rename-tag"
+vscode "github.vscode-pull-request-github"
+vscode "grapecity.gc-excelviewer"
+vscode "gruntfuggly.todo-tree"
+vscode "hediet.vscode-drawio"
+vscode "htmlhint.vscode-htmlhint"
+vscode "johnnymorganz.stylua"
+vscode "keyring.lua"
+vscode "mattpocock.ts-error-translator"
+vscode "mechatroner.rainbow-csv"
+vscode "mhutchie.git-graph"
+vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "naumovs.color-highlight"
+vscode "oderwat.indent-rainbow"
+vscode "petermekhaeil.vscode-tailwindcss-explorer"
+vscode "pkief.material-icon-theme"
+vscode "quick-lint.quick-lint-js"
+vscode "ritwickdey.liveserver"
+vscode "rubymaniac.vscode-paste-and-indent"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "stylelint.vscode-stylelint"
+vscode "sumneko.lua"
+vscode "tomoki1207.pdf"
+vscode "unifiedjs.vscode-mdx"
+vscode "visualstudioexptteam.intellicode-api-usage-examples"
+vscode "visualstudioexptteam.vscodeintellicode"
+vscode "vivaxy.vscode-conventional-commits"
+vscode "vscodevim.vim"
+vscode "wix.vscode-import-cost"
+vscode "yoavbls.pretty-ts-errors"
+vscode "yzane.markdown-pdf"
+vscode "yzhang.markdown-all-in-one"
+vscode "zignd.html-css-class-completion"
 EOF
 {{ end -}}
