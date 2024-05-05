@@ -5,10 +5,16 @@
 ### Run chezmoi script to install everything
 
 ```sh
+
+# Install xcode utilities
+
+# Install Brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+# Install an apply chezmoi repo
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
-
-or
-
+# or
 brew install chezmoi
 chezmoi init --apply https://github.com/$GITHUB_USERNAME/dotfiles.git
 ```
@@ -17,8 +23,8 @@ chezmoi init --apply https://github.com/$GITHUB_USERNAME/dotfiles.git
 
 - excel
 - word
-- lanscan
 - vbcables
+- mac mouse fix
 - Photoshop
 - Illustrator
 - In-design
