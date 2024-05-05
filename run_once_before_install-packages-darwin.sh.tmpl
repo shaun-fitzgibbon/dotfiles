@@ -2,75 +2,47 @@
 #!/bin/bash
 
 brew bundle --no-lock --file=/dev/stdin <<EOF
+### TAPS ###
 tap "caarlos0/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 
 ### BREWS ###
-# Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
-# Console Matrix
 brew "cmatrix"
-# Pack, ship and run any application as a lightweight container
 brew "docker"
-# Fast and simple Node.js version manager
 brew "fnm"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# Distributed revision control system
 brew "git"
-# Mac App Store command-line interface
 brew "mas"
-# Text-based UI library
 brew "ncurses"
-# Fast, highly customisable system info script
 brew "neofetch"
-# Theme for zsh
 brew "powerlevel10k"
-# Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
-# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Send macOS User Notifications from the command-line
 brew "terminal-notifier"
-# Terminal multiplexer
 brew "tmux"
-# Timer is like sleep, but reports progress.
 brew "caarlos0/tap/timer"
-# View, print, and comment on PDF documents
 
 ### CASKS ###
 cask "adobe-acrobat-reader"
-# BitTorrent client
+cask "brave-browser"
 cask "deluge"
-# App to build and share containerised applications and microservices
 cask "docker"
-# Collaborative team software
 cask "figma"
-# Developer targeted fonts with a high number of glyphs
 cask "font-blex-mono-nerd-font"
-# Desktop client for GitHub repositories
 cask "github"
-# GPU-based terminal emulator
 cask "kitty"
-# Remote desktop client
 cask "microsoft-remote-desktop"
-# App to write, plan, collaborate, and get organised
 cask "notion"
-# Open-source software for live streaming and screen recording
 cask "obs"
-# Control your tools with a few keystrokes
 cask "raycast"
-# Team communication and collaboration software
 cask "slack"
-# Video game digital distribution service
 cask "steam"
-# Open-source code editor
 cask "visual-studio-code"
-# Multimedia player
 cask "vlc"
-# Rust-based terminal
 cask "warp"
+cask "whatsapp"
 
 ### Mas - Mac App Store command-line interface ###
 mas "Hotspot Shield", id: 771076721
