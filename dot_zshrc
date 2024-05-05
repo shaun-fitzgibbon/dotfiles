@@ -8,7 +8,6 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH="/usr/local/sbin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
-# export TERMINFO='/usr/share/terminfo/'
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -27,6 +26,8 @@ zstyle ':omz:plugins:nvm' silent-autoload yes
 # Add wisely, as too many plugins slow down shell startup.
 plugins=( 
   # Standard plugins
+  fnm
+  fzf
   gh
   macos
   nvm
@@ -39,7 +40,7 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
-# Where should I put you?
+# Tmux sessionizer Fzf
 bindkey -s ^f "tmux-sessionizer.sh\n"
 
 # # You may need to manually set your language environment
@@ -52,8 +53,8 @@ else
   export EDITOR='nvim'
 fi
 
-# scripts 
-export SCRIPTS_LOCAL="/Users/shaun/.local/bin"
+# custom scripts folder 
+export SCRIPTS_LOCAL="/Users/shaun/.local/scripts"
 case ":$PATH:" in
   *":$SCRIPTS_LOCAL:"*) ;;
   *) export PATH="$SCRIPTS_LOCAL:$PATH" ;;
@@ -64,16 +65,16 @@ esac
 # eval "$(jenv init -)"
 
 # fnm - Node version Manager
-export PATH="/Users/shaun/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
+# export PATH="/Users/shaun/Library/Application Support/fnm:$PATH"
+# eval "`fnm env`"
+# eval "$(fnm env --use-on-cd)"
 
-# pnpm
+# pnpm 
 export PNPM_HOME="/Users/shaun/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
 
 # Spike Env 
 source ~/Projects/spike/v9/priv/scripts/shaun.sh
