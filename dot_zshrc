@@ -99,3 +99,4 @@ alias rest="timer 10m && terminal-notifier -message 'Pomodoro'\
 # Aliases
 alias connect="kitty +kitten ssh"
 alias cdk="npx aws-cdk"
+alias vim="nvim"
