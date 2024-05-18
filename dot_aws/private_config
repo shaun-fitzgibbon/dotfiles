@@ -1,0 +1,5 @@
+[default]
+region = af-south-1
+
+[profile spike]
+region = af-south-1
