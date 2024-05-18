@@ -16,6 +16,9 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.config/zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 DISABLE_MAGIC_FUNCTIONS=true
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' frequency 13
