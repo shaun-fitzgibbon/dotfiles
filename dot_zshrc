@@ -9,21 +9,16 @@ fi
 export PATH="/usr/local/sbin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 
-# Powerlevel10k theme
+# Powerlevel10k theme - To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
-# ZSH_THEME="powerlevel10k/powerlevel10k"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source ~/.config/zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment one of the following lines to change the auto-update behavior
-zstyle ':omz:update' mode auto      # update automatically without asking
-zstyle ':omz:update' frequency 13
-zstyle ':omz:plugins:nvm' autoload yes
-zstyle ':omz:plugins:nvm' silent-autoload yes
-
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' frequency 13
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -49,6 +44,10 @@ bindkey -s ^f "tmux-sessionizer.sh\n"
 
 # # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+
+# GPG 
+export GPG_TTY=$(tty)
+
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
