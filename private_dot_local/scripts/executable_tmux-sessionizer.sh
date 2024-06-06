@@ -15,7 +15,7 @@ echo $selected
 
 case $selected in
   *"/projects/airdosh"*)
-    selected_name=[spike]_$(basename "airdosh__$selected" | tr . _) ;;
+    selected_name=[airdosh]_$(basename "airdosh__$selected" | tr . _) ;;
   *"/projects/aws"*)
     selected_name=[aws]_$(basename "aws__$selected" | tr . _) ;;
   *"/projects/fitzindustries"*)
