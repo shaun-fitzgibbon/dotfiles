@@ -81,11 +81,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# Spike Env 
-source ~/Projects/spike/v9/priv/scripts/shaun.sh
-source ~/Projects/spike/v9/priv/scripts/devenv.sh
-source ~/Projects/spike/v9/priv/scripts/spikeenv.sh
-
 # Mac setup for pomo
 # Requires https://github.com/caarlos0/timer to be installed
 alias work="timer 60m && terminal-notifier -message 'Pomodoro'\
