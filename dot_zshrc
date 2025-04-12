@@ -67,8 +67,9 @@ case ":$PATH:" in
 esac
 
 # Java with Jenv
-# export PATH="$HOME/.jenv/bin:$PATH"
-# eval "$(jenv init -)"
+export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+eval "$(jenv init -)"
 
 # fnm - Node version Manager
 export PATH="/Users/shaun/Library/Application Support/fnm:$PATH"
