@@ -166,6 +166,7 @@ automatically-unhide-macos-hidden-apps = false
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
 
+# Open these apps in specific workspaces 
 [[on-window-detected]]
     if.app-id = "com.vivaldi.Vivaldi"
     run = "move-node-to-workspace 1"
@@ -179,9 +180,9 @@ automatically-unhide-macos-hidden-apps = false
     run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
-    if.app-id = "net.whatsapp.WhatsApp"
-    run = "move-node-to-workspace W"
+    if.app-id = "com.tinyspeck.slackmacgap"
+    run = "move-node-to-workspace S"
 
 [[on-window-detected]]
-    if.app-id = "com.slack.Slack"
-    run = "move-node-to-workspace S"
+    if.app-id = "net.whatsapp.WhatsApp"
+    run = "move-node-to-workspace W"
