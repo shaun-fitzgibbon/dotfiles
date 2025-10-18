@@ -26,7 +26,9 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 # font-family = Iosevka
-# window-padding-x = 2
+window-padding-x = 5
+background-opacity = 0.9
+background-blur-radius = 0
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
@@ -48,3 +50,10 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
+# Automatic dark/light switching
+theme = dark:Rose Pine Moon,light:Rose Pine Dawn
+
+# Or set individual themes
+# theme = Rose Pine
+# theme = Rose Pine Moon
+# theme = Rose Pine Dawn
