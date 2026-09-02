@@ -105,7 +105,7 @@ exec-on-workspace-change = ['/bin/bash', '-c',
     # App shortcuts
     alt-a = 'exec-and-forget open -a /Applications/ChatGPT.app'
     alt-b = 'exec-and-forget open -a /Applications/Vivaldi.app'
-    alt-c = 'exec-and-forget open -a /Applications/Cursor.app'
+    alt-i = 'exec-and-forget open -a /Applications/Zed.app'
     alt-d = 'exec-and-forget open -a /Applications/Discord.app'
     alt-t = 'exec-and-forget open -a /Applications/Ghostty.app'
     alt-n = 'exec-and-forget open -a /Applications/Notion.app'
@@ -211,11 +211,11 @@ exec-on-workspace-change = ['/bin/bash', '-c',
     run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
-    if.app-id = "com.todesktop.230313mzl4w4u92"
+    if.app-id = "com.mitchellh.ghostty"
     run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
-    if.app-id = "com.mitchellh.ghostty"
+    if.app-id = "dev.zed.Zed"
     run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
@@ -229,3 +229,11 @@ exec-on-workspace-change = ['/bin/bash', '-c',
 [[on-window-detected]]
     if.app-id = "net.whatsapp.WhatsApp"
     run = "move-node-to-workspace W"
+
+[[on-window-detected]]
+    if.app-id = "com.apple.finder"
+    run = "layout floating"
+
+[[on-window-detected]]
+    if.app-id = "com.macpaw.CleanMyMac4"
+    run = "layout floating"
