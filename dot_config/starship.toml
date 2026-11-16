@@ -1,0 +1,43 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+# Minimal, two-line prompt inspired by the previous Powerlevel10k setup.
+add_newline = true
+format = "$directory$git_branch$git_status$line_break$character"
+right_format = "$cmd_duration$python$username$hostname"
+
+[directory]
+style = "bold blue"
+truncation_length = 3
+
+[git_branch]
+symbol = ""
+format = "[$branch]($style) "
+style = "magenta"
+
+[git_status]
+style = "red"
+
+[character]
+success_symbol = "[❯](magenta)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+
+[cmd_duration]
+min_time = 3000
+format = "[$duration]($style) "
+style = "yellow"
+
+[python]
+format = "[$virtualenv]($style) "
+style = "cyan"
+detect_extensions = []
+detect_files = []
+detect_folders = []
+
+[username]
+format = "[$user]($style)"
+show_always = false
+
+[hostname]
+format = "[@$hostname]($style) "
+ssh_only = true

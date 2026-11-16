@@ -65,8 +65,8 @@ brew "openjdk"
 brew "pinentry-mac"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
-# Theme for zsh
-brew "powerlevel10k"
+# Cross-shell prompt
+brew "starship"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # Reattach process (e.g., tmux) to background
