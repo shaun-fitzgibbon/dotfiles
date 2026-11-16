@@ -7,10 +7,8 @@ persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "D", "S", 
 
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-# Run Sketchybar together with AeroSpace
-# sketchbar has a built-in detection of already running process,
-# so it won't be run twice on AeroSpace restart
-after-startup-command = ['exec-and-forget sketchybar','exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0']
+# SketchyBar is managed by Homebrew services; only launch borders here.
+after-startup-command = ['exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0']
 
 # Start AeroSpace at login
 start-at-login = true
