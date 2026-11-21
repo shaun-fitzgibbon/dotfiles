@@ -63,10 +63,6 @@ export PATH="$HOME/.jenv/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 eval "$(jenv init -)"
 
-# fnm - Node version Manager
-export PATH="/Users/shaun/Library/Application Support/fnm:$PATH"
-eval "$(fnm env --use-on-cd)"
-
 # pnpm 
 export PNPM_HOME="/Users/shaun/Library/pnpm"
 case ":$PATH:" in
@@ -76,6 +72,10 @@ esac
 
 # Prefer Homebrew binaries, including OpenCode 2.
 export PATH="/opt/homebrew/bin:$PATH"
+
+# Initialize fnm after other PATH changes so its Node and npm take priority.
+export PATH="/Users/shaun/Library/Application Support/fnm:$PATH"
+eval "$(fnm env --use-on-cd)"
 
 # Mac setup for pomo
 # Requires https://github.com/caarlos0/timer to be installed
